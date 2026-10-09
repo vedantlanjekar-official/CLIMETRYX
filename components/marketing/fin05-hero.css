@@ -1,0 +1,140 @@
+/*
+ * FIN-05 hero. The footage is bright: a near-white field on the left and the
+ * plant, river and data panels on the right. Overlays therefore lighten the
+ * text field instead of darkening the scene.
+ */
+
+.fin05-hero {
+  --hero-ink: #0c1f24;
+  --hero-ink-soft: #2b3f43;
+  --hero-emerald: #12704c;
+  --hero-mist: 247 249 247;
+  background: #eef2ef url("/videos/fin05-hero-poster.webp") 72% 50% / cover no-repeat;
+}
+
+.fin05-hero__video {
+  object-position: 72% 50%;
+}
+
+/* Text field: reinforce the footage's own white negative space. */
+.fin05-hero__wash {
+  background:
+    linear-gradient(180deg, rgb(var(--hero-mist) / 0.6) 0%, rgb(var(--hero-mist) / 0) 140px),
+    linear-gradient(90deg, rgb(var(--hero-mist) / 0.9) 0%, rgb(var(--hero-mist) / 0.72) 30%, rgb(var(--hero-mist) / 0.22) 50%, rgb(var(--hero-mist) / 0) 64%);
+}
+
+/* Blend into the canvas colour of the next section. */
+.fin05-hero__fade {
+  background: linear-gradient(180deg, rgb(250 251 248 / 0) 0%, rgb(250 251 248 / 0.85) 70%, #fafbf8 100%);
+}
+
+@media (max-width: 1023.98px) {
+  .fin05-hero { background-position: 60% 50%; }
+  .fin05-hero__video { object-position: 60% 50%; }
+
+  /* Portrait: text sits over the sky, the plant and river stay visible below. */
+  .fin05-hero__wash {
+    background: linear-gradient(
+      180deg,
+      rgb(var(--hero-mist) / 0.92) 0%,
+      rgb(var(--hero-mist) / 0.84) 42%,
+      rgb(var(--hero-mist) / 0.35) 62%,
+      rgb(var(--hero-mist) / 0) 76%
+    );
+  }
+}
+
+@media (max-width: 639.98px) {
+  .fin05-hero { background-position: 54% 50%; }
+  .fin05-hero__video { object-position: 54% 50%; }
+
+  .fin05-hero__wash {
+    background: linear-gradient(
+      180deg,
+      rgb(var(--hero-mist) / 0.92) 0%,
+      rgb(var(--hero-mist) / 0.86) 50%,
+      rgb(var(--hero-mist) / 0.5) 66%,
+      rgb(var(--hero-mist) / 0) 80%
+    );
+  }
+}
+
+/* Entrance: brief, staggered, and only ever an enhancement. */
+@keyframes fin05-hero-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+
+.fin05-hero__reveal {
+  animation: fin05-hero-in 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: var(--delay, 0ms);
+}
+
+/* Content recedes slightly as the hero scrolls away (no JavaScript). */
+@keyframes fin05-hero-recede {
+  to { opacity: 0.15; transform: translateY(-48px); }
+}
+
+@supports (animation-timeline: view()) {
+  .fin05-hero__content {
+    animation: fin05-hero-recede linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 70%;
+  }
+}
+
+/* Navigation and secondary links: hairline underline that draws from the left. */
+.fin05-link {
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.2s ease;
+}
+.fin05-link:hover,
+.fin05-link:focus-visible {
+  background-size: 100% 1px;
+}
+
+.fin05-link--static {
+  background-size: 100% 1px;
+  background-image: linear-gradient(rgb(12 31 36 / 0.25), rgb(12 31 36 / 0.25));
+}
+.fin05-link--static:hover,
+.fin05-link--static:focus-visible {
+  background-image: linear-gradient(currentColor, currentColor);
+}
+
+/* Scroll cue: a fine line with a slow travelling highlight. */
+@keyframes fin05-cue {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+.fin05-cue__line {
+  position: relative;
+  overflow: hidden;
+  background: rgb(12 31 36 / 0.18);
+}
+.fin05-cue__line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, var(--hero-ink), transparent);
+  animation: fin05-cue 2.4s cubic-bezier(0.6, 0, 0.4, 1) infinite;
+}
+
+.fin05-hero :focus-visible {
+  outline: 2px solid var(--hero-emerald);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fin05-hero__reveal,
+  .fin05-hero__content {
+    animation: none;
+  }
+  .fin05-cue__line::after {
+    animation: none;
+    opacity: 0;
+  }
+  .fin05-link {
+    transition: none;
+  }
+}

@@ -1,0 +1,533 @@
+{
+  "dataset": "World Bank Global Flood Exposure: Gridded exposure headcounts by country (DR0089139)",
+  "licence": "CC BY 4.0",
+  "resolution": "3 arc-seconds (about 90 m)",
+  "generatedAt": "2026-10-09T08:24:08.158Z",
+  "files": [
+    {
+      "file": "FloodPop_IND_1038.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1038.tif",
+      "bbox": [
+        73.762916666666,
+        32.258750001153,
+        79.307916666666,
+        35.50291666781966
+      ],
+      "width": 6654,
+      "height": 3893,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1039.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1039.tif",
+      "bbox": [
+        92.20374999999935,
+        6.75541666781966,
+        94.27791666666602,
+        13.676250001152994
+      ],
+      "width": 2489,
+      "height": 8305,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1040.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1040.tif",
+      "bbox": [
+        76.75624999999934,
+        12.611250001152996,
+        84.76124999999934,
+        19.916250001152996
+      ],
+      "width": 9606,
+      "height": 8766,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1041.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1041.tif",
+      "bbox": [
+        89.69458333333267,
+        24.13458333448633,
+        96.02124999999934,
+        27.977916667819663
+      ],
+      "width": 7592,
+      "height": 4612,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1042.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1042.tif",
+      "bbox": [
+        76.83291666666601,
+        28.407916667819663,
+        77.337916666666,
+        28.88458333448633
+      ],
+      "width": 606,
+      "height": 572,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1043.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1043.tif",
+      "bbox": [
+        73.67874999999934,
+        14.891250001152994,
+        74.34208333333267,
+        15.79791666781966
+      ],
+      "width": 796,
+      "height": 1088,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1044.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1044.tif",
+      "bbox": [
+        68.17791666666601,
+        20.12041666781966,
+        74.47958333333267,
+        24.706250001152995
+      ],
+      "width": 7562,
+      "height": 5503,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1045.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1045.tif",
+      "bbox": [
+        74.46458333333267,
+        27.655416667819665,
+        77.59208333333267,
+        30.930416667819664
+      ],
+      "width": 3753,
+      "height": 3930,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1046.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1046.tif",
+      "bbox": [
+        75.57874999999935,
+        30.383750001152997,
+        78.99624999999935,
+        33.17208333448633
+      ],
+      "width": 4101,
+      "height": 3346,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1047.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1047.tif",
+      "bbox": [
+        74.05458333333267,
+        11.573750001152995,
+        78.577916666666,
+        18.455416667819662
+      ],
+      "width": 5428,
+      "height": 8258,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1048.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1048.tif",
+      "bbox": [
+        74.86541666666601,
+        8.297083334486326,
+        77.39624999999934,
+        12.791250001152992
+      ],
+      "width": 3037,
+      "height": 5393,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1049.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1049.tif",
+      "bbox": [
+        71.83874999999934,
+        8.088750001152993,
+        73.70374999999933,
+        12.398750001152994
+      ],
+      "width": 2238,
+      "height": 5172,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1050.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1050.tif",
+      "bbox": [
+        72.650416666666,
+        15.604583334486328,
+        80.892916666666,
+        22.031250001152994
+      ],
+      "width": 9891,
+      "height": 7712,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1051.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1051.tif",
+      "bbox": [
+        92.97291666666601,
+        23.83541666781966,
+        94.74374999999934,
+        25.697916667819662
+      ],
+      "width": 2125,
+      "height": 2235,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1052.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1052.tif",
+      "bbox": [
+        89.81541666666601,
+        25.028750001152996,
+        92.80458333333267,
+        26.118750001152996
+      ],
+      "width": 3587,
+      "height": 1308,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1053.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1053.tif",
+      "bbox": [
+        92.25874999999934,
+        21.946250001152993,
+        93.437916666666,
+        24.521250001152993
+      ],
+      "width": 1415,
+      "height": 3090,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1054.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1054.tif",
+      "bbox": [
+        93.33124999999934,
+        25.201250001152992,
+        95.24541666666602,
+        27.043750001152993
+      ],
+      "width": 2297,
+      "height": 2211,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1055.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1055.tif",
+      "bbox": [
+        81.382916666666,
+        17.80208333448633,
+        87.482916666666,
+        22.563750001152997
+      ],
+      "width": 7320,
+      "height": 5714,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1056.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1056.tif",
+      "bbox": [
+        73.870416666666,
+        29.545416667819662,
+        76.93208333333267,
+        32.52708333448633
+      ],
+      "width": 3674,
+      "height": 3578,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1057.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1057.tif",
+      "bbox": [
+        69.482916666666,
+        23.062083334486328,
+        78.262916666666,
+        30.194583334486328
+      ],
+      "width": 10536,
+      "height": 8559,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1058.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1058.tif",
+      "bbox": [
+        88.01624999999935,
+        27.081250001152995,
+        88.92374999999934,
+        28.115416667819662
+      ],
+      "width": 1089,
+      "height": 1241,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1059.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1059.tif",
+      "bbox": [
+        76.225416666666,
+        8.073750001152995,
+        80.35708333333267,
+        13.537916667819662
+      ],
+      "width": 4958,
+      "height": 6557,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1060.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1060.tif",
+      "bbox": [
+        91.150416666666,
+        22.928750001153,
+        92.33708333333267,
+        24.555416667819664
+      ],
+      "width": 1424,
+      "height": 1952,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1061.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1061.tif",
+      "bbox": [
+        85.82624999999933,
+        20.867916667819664,
+        89.877916666666,
+        27.221250001152995
+      ],
+      "width": 4862,
+      "height": 7624,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1062.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1062.tif",
+      "bbox": [
+        94.86374999999934,
+        26.642083334486326,
+        97.16708333333267,
+        28.302083334486326
+      ],
+      "width": 2764,
+      "height": 1992,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1063.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1063.tif",
+      "bbox": [
+        83.31541666666601,
+        24.286250001152993,
+        88.29208333333267,
+        27.52041666781966
+      ],
+      "width": 5972,
+      "height": 3881,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1064.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1064.tif",
+      "bbox": [
+        76.69041666666601,
+        30.668750001152997,
+        76.83708333333267,
+        30.79958333448633
+      ],
+      "width": 176,
+      "height": 157,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1065.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1065.tif",
+      "bbox": [
+        80.23874999999934,
+        17.782083334486327,
+        84.39041666666601,
+        24.107083334486326
+      ],
+      "width": 4982,
+      "height": 7590,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1066.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1066.tif",
+      "bbox": [
+        72.92208333333268,
+        20.051250001152997,
+        73.22958333333268,
+        20.361250001152996
+      ],
+      "width": 369,
+      "height": 372,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1067.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1067.tif",
+      "bbox": [
+        70.670416666666,
+        20.36791666781966,
+        72.87624999999933,
+        20.99041666781966
+      ],
+      "width": 2647,
+      "height": 747,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1068.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1068.tif",
+      "bbox": [
+        83.322916666666,
+        21.966250001152993,
+        87.97374999999934,
+        25.348750001152993
+      ],
+      "width": 5581,
+      "height": 4059,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1069.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1069.tif",
+      "bbox": [
+        74.03458333333268,
+        21.074583334486327,
+        82.80791666666602,
+        26.874583334486328
+      ],
+      "width": 10528,
+      "height": 6960,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1070.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1070.tif",
+      "bbox": [
+        75.22041666666601,
+        10.810416667819663,
+        82.30208333333267,
+        16.75208333448633
+      ],
+      "width": 8498,
+      "height": 7130,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1071.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1071.tif",
+      "bbox": [
+        77.08458333333267,
+        23.872083334486327,
+        84.63124999999934,
+        30.412916667819662
+      ],
+      "width": 9056,
+      "height": 7849,
+      "bands": 6,
+      "noData": 0
+    },
+    {
+      "file": "FloodPop_IND_1072.tif",
+      "country": "IND",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0062763/2/DR0089139/GlobalFloodExposure/IND/FloodPop_IND_1072.tif",
+      "bbox": [
+        77.56208333333268,
+        28.71541666781966,
+        81.04374999999935,
+        31.291250001152996
+      ],
+      "width": 4178,
+      "height": 3091,
+      "bands": 6,
+      "noData": 0
+    }
+  ]
+}

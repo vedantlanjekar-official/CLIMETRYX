@@ -1,0 +1,177 @@
+{
+  "updated": "2026-10-09",
+  "notes": "Statuses describe this workspace. verified means a live response was inspected during implementation. implemented_unverified means code exists without a successful checked response in the saved run.",
+  "sources": [
+    {
+      "id": "open-meteo-forecast",
+      "name": "Open-Meteo Forecast API",
+      "kind": "forecast_api",
+      "status": "verified",
+      "docsUrl": "https://open-meteo.com/en/docs",
+      "verification": "HTTP 200 on 9 Oct 2026 for latitude 18.5204, longitude 73.8567, three forecast days. Configured with OPEN_METEO_MODE=non_commercial.",
+      "limitations": "The free API is non-commercial only. Commercial use needs an Open-Meteo API subscription and OPEN_METEO_MODE=commercial with a key."
+    },
+    {
+      "id": "open-meteo-archive",
+      "name": "Open-Meteo Historical Weather API",
+      "kind": "historical_api",
+      "status": "verified",
+      "docsUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+      "verification": "models=era5 daily temperature_2m_max, precipitation_sum and wind_gusts_10m_max returned 10,958 non-null days for 1991-01-01..2020-12-31 at grid 18.5, 73.75 on 9 Oct 2026.",
+      "limitations": "ERA5 lags real time by about 6 days. models=era5_land returned null daily precipitation and gusts on this route, so ERA5 is used for all variables. 30-year requests are weighted heavily against the free per-minute limit (HTTP 429)."
+    },
+    {
+      "id": "open-meteo-era5-climatology",
+      "name": "ERA5 1991–2020 climatology via Open-Meteo",
+      "kind": "historical_api",
+      "status": "verified",
+      "docsUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+      "verification": "Fitted for Pune, Mumbai, Delhi and Chennai grid cells by scripts/train-climatology.ts on 9 Oct 2026, with out-of-time validation (train 1991–2010, test 2011–2020). Outputs in data/models/climatology/.",
+      "limitations": "Reanalysis grid statistics (about 0.25°), not station records at the premises. Empirical return levels come from 30 annual maxima, so the 10-year level is uncertain."
+    },
+    {
+      "id": "open-meteo-geocoding",
+      "name": "Open-Meteo Geocoding",
+      "kind": "live_api",
+      "status": "verified",
+      "docsUrl": "https://open-meteo.com/en/docs/geocoding-api",
+      "verification": "Search for Pune returned Pune, India at 18.51957, 73.85535 on 9 Oct 2026.",
+      "limitations": "Place candidates require user confirmation. Match quality is place_name_candidate, not rooftop."
+    },
+    {
+      "id": "world-bank-cckp",
+      "name": "World Bank CCKP",
+      "kind": "historical_api",
+      "status": "verified",
+      "docsUrl": "https://climateknowledgeportal.worldbank.org/index.php/download-data",
+      "verification": "Documented IND historical climatology route returned HTTP 200 with metadata.status success, but only time key 1995-07. Coverage is partial and is not filled in.",
+      "limitations": "Projections and climatologies are not weather forecasts."
+    },
+    {
+      "id": "world-bank-global-flood-exposure",
+      "name": "World Bank Global Flood Exposure",
+      "kind": "static_raster",
+      "status": "verified",
+      "docsUrl": "https://datacatalog.worldbank.org/search/dataset/0062763/global-flood-exposure-gridded-exposure-headcounts-by-country",
+      "verification": "Window reads of FloodPop_IND_1050.tif around 18.5204, 73.8567 on 9 October 2026: 22.3% of residents within about 556 m above 0.15 m modelled depth.",
+      "limitations": "Population exposure for a modelled 1-in-100-year event. Depth-class band labels are inferred and need confirming against the dataset Read Me. CC BY 4.0. Context only; not used as a business flood score."
+    },
+    {
+      "id": "planetary-computer-sentinel-2-l2a",
+      "name": "Sentinel-2 L2A via Microsoft Planetary Computer",
+      "kind": "satellite_analysis",
+      "status": "verified",
+      "docsUrl": "https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a",
+      "verification": "Scene of 5 October 2026 over Pune: 0% cloud over the 1 km square, NDVI mean 0.158, previous-year NDVI 0.159.",
+      "limitations": "Land-cover context only. NDVI is not flood probability, damage or loss. Not scored."
+    },
+    {
+      "id": "open-meteo-flood-glofas",
+      "name": "Open-Meteo Flood API (GloFAS)",
+      "kind": "live_api",
+      "status": "verified",
+      "docsUrl": "https://open-meteo.com/en/docs/flood-api",
+      "verification": "Pune river cell: 29 complete years, typical annual peak 1136.63 m3/s, 10-year level 2688.06 m3/s.",
+      "limitations": "About 5 km river grid; the nearest cell may not be the river beside the site. Context only. Free tier is non-commercial."
+    },
+    {
+      "id": "open-meteo-climate-cmip6",
+      "name": "Open-Meteo Climate API (CMIP6 HighResMIP)",
+      "kind": "live_api",
+      "status": "verified",
+      "docsUrl": "https://open-meteo.com/en/docs/climate-api",
+      "verification": "Three models, 2000-2014 against 2036-2050, at the nearest 0.25 degree cell.",
+      "limitations": "Projections, not forecasts. Heavy requests count as several calls and can hit the free-tier limit. Context only."
+    },
+    {
+      "id": "copernicus-sentinel-2-l2a",
+      "name": "Sentinel-2 L2A",
+      "kind": "satellite_catalog",
+      "status": "verified",
+      "docsUrl": "https://stac.dataspace.copernicus.eu/v1/",
+      "verification": "STAC search returned S2B_MSIL2A_20261005T052659_N0513_R105_T43QCA_20261005T091454 with cloud cover 0.77. Bands were not downloaded, so NDVI remains not_available.",
+      "limitations": "Catalog discovery is not an analyzed indicator. NDVI is not flood probability or loss."
+    },
+    {
+      "id": "chirps-v3",
+      "name": "CHIRPS v3",
+      "kind": "batch_dataset",
+      "status": "needs_download",
+      "docsUrl": "https://www.chc.ucsb.edu/data/chirps3",
+      "limitations": "No rainfall archive was downloaded."
+    },
+    {
+      "id": "chirps-v2-research-citation",
+      "name": "CHIRPS v2 research citation",
+      "kind": "batch_dataset",
+      "status": "unavailable",
+      "docsUrl": "https://www.chc.ucsb.edu/data/chirps",
+      "limitations": "Named in the research note. Not the implementation default."
+    },
+    {
+      "id": "nasa-gpm-imerg",
+      "name": "NASA GPM IMERG",
+      "kind": "batch_dataset",
+      "status": "needs_credentials",
+      "docsUrl": "https://gpm.nasa.gov/data/imerg",
+      "limitations": "No Earthdata retrieval was run."
+    },
+    {
+      "id": "era5-land",
+      "name": "ERA5-Land",
+      "kind": "batch_dataset",
+      "status": "needs_credentials",
+      "docsUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land",
+      "limitations": "CDS key not used. Open-Meteo reanalysis is a different access path."
+    },
+    {
+      "id": "wri-aqueduct-4",
+      "name": "WRI Aqueduct 4.0",
+      "kind": "batch_dataset",
+      "status": "needs_download",
+      "docsUrl": "https://www.wri.org/data/aqueduct-water-risk-atlas",
+      "limitations": "CSV or GeoPackage import only. Not a utility outage feed."
+    },
+    {
+      "id": "global-flood-database",
+      "name": "Global Flood Database",
+      "kind": "batch_dataset",
+      "status": "requires_license_check",
+      "docsUrl": "https://www.nature.com/articles/s41597-021-00819-1",
+      "limitations": "Paper identified. Download route and licence were not verified. No events imported."
+    },
+    {
+      "id": "official-alerts",
+      "name": "Official warnings (NDMA SACHET CAP feed)",
+      "kind": "live_api",
+      "status": "verified",
+      "docsUrl": "https://sachet.ndma.gov.in/",
+      "verification": "On 9 October 2026, 41 active CAP alerts were parsed with their polygons; none covered Pune.",
+      "limitations": "India only; other countries have no configured authority feed. Forecasts are not relabelled as warnings."
+    },
+    {
+      "id": "utility-reliability",
+      "name": "Utility reliability",
+      "kind": "future_integration",
+      "status": "unavailable",
+      "docsUrl": null,
+      "limitations": "No global outage API. Business-reported and hypothetical records are labelled."
+    },
+    {
+      "id": "unidentified-organizer-reference-2",
+      "name": "Unidentified organizer reference",
+      "kind": "future_integration",
+      "status": "unavailable",
+      "docsUrl": null,
+      "limitations": "The research note could name only the World Bank flood dataset of the three organizer references."
+    },
+    {
+      "id": "unidentified-organizer-reference-3",
+      "name": "Unidentified organizer reference",
+      "kind": "future_integration",
+      "status": "unavailable",
+      "docsUrl": null,
+      "limitations": "Not guessed."
+    }
+  ]
+}

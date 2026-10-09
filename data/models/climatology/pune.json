@@ -1,0 +1,322 @@
+{
+  "requested": {
+    "latitude": 18.52,
+    "longitude": 73.86
+  },
+  "grid": {
+    "latitude": 18.5,
+    "longitude": 73.75
+  },
+  "model": {
+    "version": "fin05-climatology-1.0.0",
+    "fittedAt": "2026-10-09T05:37:19.454Z",
+    "source": {
+      "provider": "Open-Meteo Historical Weather API",
+      "model": "ERA5 reanalysis (models=era5)",
+      "gridLatitude": 18.5,
+      "gridLongitude": 73.75,
+      "elevationM": 663,
+      "retrievedAt": "2026-10-09T05:37:19.453Z",
+      "licence": "Open-Meteo free API, non-commercial use only. ERA5: Copernicus Climate Change Service.",
+      "attribution": "Weather data by Open-Meteo.com; contains modified Copernicus Climate Change Service information (ERA5)."
+    },
+    "baseline": {
+      "start": "1991-01-01",
+      "end": "2020-12-31",
+      "years": 30,
+      "days": 10958,
+      "missingDays": 0
+    },
+    "heat": {
+      "tmaxP90C": 35,
+      "tmaxP95C": 36,
+      "tmaxP99C": 37.6
+    },
+    "rain": {
+      "wetDayMm": 1,
+      "wetDayP95Mm": 29,
+      "wetDayP99Mm": 62.6,
+      "threeDayP99Mm": 106.1,
+      "annualMax1Day2yrMm": 75.8,
+      "annualMax1Day10yrMm": 165.8
+    },
+    "gust": {
+      "p95Mps": 15,
+      "p99Mps": 17.3,
+      "annualMax2yrMps": 19,
+      "annualMax10yrMps": 21.4
+    },
+    "spi": {
+      "30": [
+        {
+          "month": 1,
+          "meanMm": 0.83,
+          "alpha": 0.44366,
+          "beta": 5.63494,
+          "zeroFraction": 0.6667,
+          "n": 30
+        },
+        {
+          "month": 2,
+          "meanMm": 1.63,
+          "alpha": 0.55924,
+          "beta": 6.233,
+          "zeroFraction": 0.5333,
+          "n": 30
+        },
+        {
+          "month": 3,
+          "meanMm": 3.52,
+          "alpha": 0.78685,
+          "beta": 5.37329,
+          "zeroFraction": 0.1667,
+          "n": 30
+        },
+        {
+          "month": 4,
+          "meanMm": 9.91,
+          "alpha": 1.18718,
+          "beta": 8.34748,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 5,
+          "meanMm": 21.41,
+          "alpha": 1.35742,
+          "beta": 15.7701,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 6,
+          "meanMm": 241.41,
+          "alpha": 4.14326,
+          "beta": 58.26577,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 7,
+          "meanMm": 327.04,
+          "alpha": 7.57498,
+          "beta": 43.1737,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 8,
+          "meanMm": 251.03,
+          "alpha": 4.90155,
+          "beta": 51.21374,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 9,
+          "meanMm": 185.66,
+          "alpha": 3.93891,
+          "beta": 47.13401,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 10,
+          "meanMm": 74.71,
+          "alpha": 1.52328,
+          "beta": 49.04756,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 11,
+          "meanMm": 23.62,
+          "alpha": 0.6583,
+          "beta": 38.44301,
+          "zeroFraction": 0.0667,
+          "n": 30
+        },
+        {
+          "month": 12,
+          "meanMm": 4.48,
+          "alpha": 0.51177,
+          "beta": 15.43667,
+          "zeroFraction": 0.4333,
+          "n": 30
+        }
+      ],
+      "90": [
+        {
+          "month": 1,
+          "meanMm": 28.68,
+          "alpha": 0.66068,
+          "beta": 48.42318,
+          "zeroFraction": 0.1034,
+          "n": 29
+        },
+        {
+          "month": 2,
+          "meanMm": 7,
+          "alpha": 0.60958,
+          "beta": 15.12953,
+          "zeroFraction": 0.2414,
+          "n": 29
+        },
+        {
+          "month": 3,
+          "meanMm": 6.77,
+          "alpha": 0.60693,
+          "beta": 11.54484,
+          "zeroFraction": 0.0333,
+          "n": 30
+        },
+        {
+          "month": 4,
+          "meanMm": 15.82,
+          "alpha": 1.24034,
+          "beta": 12.75187,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 5,
+          "meanMm": 35.29,
+          "alpha": 3.76559,
+          "beta": 9.3726,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 6,
+          "meanMm": 273.28,
+          "alpha": 5.33249,
+          "beta": 51.24877,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 7,
+          "meanMm": 598.49,
+          "alpha": 12.12023,
+          "beta": 49.37943,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 8,
+          "meanMm": 833.76,
+          "alpha": 14.57348,
+          "beta": 57.21078,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 9,
+          "meanMm": 767.95,
+          "alpha": 14.28717,
+          "beta": 53.75079,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 10,
+          "meanMm": 501.91,
+          "alpha": 9.2427,
+          "beta": 54.30374,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 11,
+          "meanMm": 279.61,
+          "alpha": 4.16437,
+          "beta": 67.14415,
+          "zeroFraction": 0,
+          "n": 30
+        },
+        {
+          "month": 12,
+          "meanMm": 98.88,
+          "alpha": 1.97093,
+          "beta": 50.17093,
+          "zeroFraction": 0,
+          "n": 30
+        }
+      ]
+    }
+  },
+  "validation": {
+    "version": "fin05-climatology-1.0.0",
+    "trainPeriod": {
+      "start": "1991-01-01",
+      "end": "2010-12-31"
+    },
+    "testPeriod": {
+      "start": "2011-01-01",
+      "end": "2020-12-31"
+    },
+    "checks": [
+      {
+        "key": "tmax_p95",
+        "label": "Days above training P95 daily maximum temperature",
+        "expected": 0.05,
+        "observed": 0.0764,
+        "samples": 3653,
+        "ratio": 1.53
+      },
+      {
+        "key": "wet_p95",
+        "label": "Wet days above training P95 wet-day rainfall",
+        "expected": 0.05,
+        "observed": 0.0528,
+        "samples": 1345,
+        "ratio": 1.06
+      },
+      {
+        "key": "gust_p95",
+        "label": "Days above training P95 daily maximum gust",
+        "expected": 0.05,
+        "observed": 0.0534,
+        "samples": 3653,
+        "ratio": 1.07
+      },
+      {
+        "key": "spi90_le_minus1",
+        "label": "Month-end SPI-90 at or below −1 (moderately dry or worse)",
+        "expected": 0.1587,
+        "observed": 0.161,
+        "samples": 118,
+        "ratio": 1.01
+      }
+    ],
+    "spi90Test": {
+      "mean": 0.18,
+      "sd": 1.24,
+      "samples": 118
+    },
+    "interpretation": [
+      "Days above training P95 daily maximum temperature: 7.6% versus 5% expected. The recent period exceeds the older baseline more often, consistent with a shift; thresholds from an older baseline understate current frequency.",
+      "Wet days above training P95 wet-day rainfall: 5.3% versus 5% expected. Within a factor of 1.5.",
+      "Days above training P95 daily maximum gust: 5.3% versus 5% expected. Within a factor of 1.5.",
+      "Month-end SPI-90 at or below −1 (moderately dry or worse): 16.1% versus 15.9% expected. Within a factor of 1.5."
+    ]
+  },
+  "currentSpi": {
+    "spi30": {
+      "window": 30,
+      "value": -0.79,
+      "totalMm": 109.1,
+      "normalMm": 185.66,
+      "endDate": "2026-09-30",
+      "month": 9
+    },
+    "spi90": {
+      "window": 90,
+      "value": 0.93,
+      "totalMm": 951.8,
+      "normalMm": 767.95,
+      "endDate": "2026-09-30",
+      "month": 9
+    }
+  }
+}

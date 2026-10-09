@@ -1,0 +1,39 @@
+{
+  "area": {
+    "name": "Khadakwasla reservoir and south-west Pune, Maharashtra, India",
+    "bbox": [73.7, 18.41, 73.82, 18.48],
+    "crs": "EPSG:4326"
+  },
+  "collection": "Sentinel-2 Level-2A (sentinel-2-l2a)",
+  "provider": "Copernicus Sentinel-2 (ESA), accessed through the Microsoft Planetary Computer STAC API and data API",
+  "asset": "visual (true-colour B04/B03/B02 composite, 10 m native resolution)",
+  "rendering": "Planetary Computer item bbox render at 1600x934 px, converted to WebP. No further colour adjustment.",
+  "retrievedAt": "2026-10-09",
+  "attribution": "Contains modified Copernicus Sentinel data 2025, processed by the Microsoft Planetary Computer.",
+  "licence": "Copernicus Sentinel data terms: free, full and open access, attribution required.",
+  "scenes": [
+    {
+      "file": "/images/satellite/khadakwasla-2025-04-28.webp",
+      "item": "S2C_MSIL2A_20250428T052711_R105_T43QCA_20250428T103005",
+      "datetime": "2025-04-28T05:27:11Z",
+      "platform": "Sentinel-2C",
+      "mgrsTile": "43QCA",
+      "relativeOrbit": "R105",
+      "processingBaseline": "05.11",
+      "cloudCoverPct": 0.0005,
+      "season": "Pre-monsoon (dry season)"
+    },
+    {
+      "file": "/images/satellite/khadakwasla-2025-11-14.webp",
+      "item": "S2C_MSIL2A_20251114T053111_R105_T43QCA_20251114T084109",
+      "datetime": "2025-11-14T05:31:11Z",
+      "platform": "Sentinel-2C",
+      "mgrsTile": "43QCA",
+      "relativeOrbit": "R105",
+      "processingBaseline": "05.11",
+      "cloudCoverPct": 0.0004,
+      "season": "Post-monsoon"
+    }
+  ],
+  "limitations": "A seasonal true-colour comparison of the same tile, orbit, platform and processing baseline. It is not a damage assessment, a flood map, or an analysed index. Bands were not downloaded, so NDVI and water extent are not computed."
+}

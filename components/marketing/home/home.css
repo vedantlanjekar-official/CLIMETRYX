@@ -1,0 +1,270 @@
+/*
+ * CLIMETRYX homepage. Editorial system shared by every section below the hero.
+ * Content is visible by default; the reveal pre-state applies only once
+ * RevealObserver has marked <html> with .cx-js.
+ */
+
+.cx-home {
+  --cx-ink: #0b1d29;
+  --cx-night: #071b2b;
+  --cx-slate: #536471;
+  --cx-paper: #fafbf8;
+  --cx-mist: #f2f5f2;
+  --cx-emerald: #0b896b;
+  --cx-emerald-deep: #086b54;
+  --cx-teal: #35beb4;
+  --cx-rule: #dce5de;
+  background: var(--cx-paper);
+  color: var(--cx-ink);
+}
+
+.cx-home :where(h2, h3) {
+  color: var(--cx-ink);
+}
+
+.cx-container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 84rem;
+  padding-inline: 1.5rem;
+}
+@media (min-width: 640px) {
+  .cx-container { padding-inline: 2.5rem; }
+}
+@media (min-width: 1024px) {
+  .cx-container { padding-inline: 3.5rem; }
+}
+
+.cx-section {
+  padding-block: clamp(5rem, 3.5rem + 6vw, 9.5rem);
+  scroll-margin-top: 1rem;
+}
+
+.cx-index {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cx-emerald);
+}
+.cx-index::before {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+}
+.cx-index span {
+  font-variant-numeric: tabular-nums;
+  color: var(--cx-slate);
+}
+
+.cx-display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.15rem, 1.2rem + 3.1vw, 4.1rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+  text-wrap: balance;
+}
+.cx-display em {
+  font-weight: 400;
+  color: var(--cx-emerald);
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+
+.cx-lede {
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.7;
+  color: var(--cx-slate);
+  text-wrap: pretty;
+}
+
+.cx-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cx-slate);
+}
+
+.cx-caption {
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: var(--cx-slate);
+}
+.cx-caption a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgb(83 100 113 / 0.4);
+  text-underline-offset: 2px;
+}
+.cx-caption a:hover { color: var(--cx-ink); }
+
+.cx-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--cx-rule);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cx-slate);
+  background: var(--cx-paper);
+}
+.cx-flag::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: #c98a2b;
+}
+
+.cx-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.2rem;
+  font-weight: 600;
+  color: var(--cx-ink);
+  text-decoration: none;
+  background: linear-gradient(rgb(11 29 41 / 0.25), rgb(11 29 41 / 0.25)) 0 100% / 100% 1px no-repeat;
+  transition: background-image 0.2s, color 0.2s;
+}
+.cx-link:hover,
+.cx-link:focus-visible {
+  color: var(--cx-emerald-deep);
+  background-image: linear-gradient(currentColor, currentColor);
+}
+
+.cx-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  height: 3.25rem;
+  border-radius: 10px;
+  padding-inline: 1.5rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+.cx-button:active { transform: translateY(1px); }
+.cx-button span[aria-hidden] { transition: transform 0.3s ease-out; }
+.cx-button:hover span[aria-hidden] { transform: translateX(4px); }
+
+.cx-figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cx-home :focus-visible {
+  outline: 2px solid var(--cx-emerald);
+  outline-offset: 3px;
+}
+
+/* Unified reveal. */
+.cx-js [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.cx-js [data-reveal="fade"] { transform: none; }
+.cx-js [data-reveal="image"] {
+  transform: scale(1.025);
+  transition-duration: 1.2s;
+}
+.cx-js [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cx-js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .cx-button,
+  .cx-button span[aria-hidden],
+  .cx-link {
+    transition: none;
+  }
+}
+
+/* Line drawn in when a dynamic-assessment mode changes. */
+@keyframes cx-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+.cx-draw {
+  stroke-dasharray: 1;
+  animation: cx-draw 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cx-draw { animation: none; stroke-dasharray: none; }
+}
+
+/* Before/after comparison. */
+.cx-compare {
+  --pos: 50%;
+  position: relative;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+.cx-compare__after {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 0 0 var(--pos));
+}
+.cx-compare__handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos);
+  width: 2px;
+  margin-left: -1px;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgb(7 27 43 / 0.25);
+  pointer-events: none;
+}
+.cx-compare__knob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--cx-ink);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 6px 18px -6px rgb(7 27 43 / 0.5);
+}
+.cx-compare input[type="range"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+  accent-color: auto;
+}
+.cx-compare:has(input:focus-visible) .cx-compare__knob {
+  outline: 2px solid var(--cx-teal);
+  outline-offset: 3px;
+}

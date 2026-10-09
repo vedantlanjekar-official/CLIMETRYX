@@ -1,0 +1,6 @@
+{
+  "synthetic": true,
+  "label": "Illustrative sample data — not live",
+  "business": "Riverside Foods",
+  "note": "Invented values from the FIN-05 research note. The application computes the sample through lib/demo/riverside.ts and does not store it as an observation."
+}
