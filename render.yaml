@@ -1,0 +1,15 @@
+services:
+  - type: cron
+    name: climetryx-job-sweeper
+    runtime: node
+    region: singapore
+    plan: starter
+    schedule: "*/15 * * * *"
+    buildCommand: echo "no build needed"
+    startCommand: >-
+      curl -fsS -X POST -H "Authorization: Bearer $CRON_SECRET" "$CLIMETRYX_URL/api/jobs/process"
+    envVars:
+      - key: CLIMETRYX_URL
+        value: https://climetryx.vercel.app
+      - key: CRON_SECRET
+        sync: false
